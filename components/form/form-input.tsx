@@ -22,7 +22,8 @@ interface FormInputProps {
   onBlur?: () => void;
 };
 
-export const FormInput = forwardRef<HTMLInputElement, FormInputProps>(({
+export const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
+  ({
   id,
   label,
   type,

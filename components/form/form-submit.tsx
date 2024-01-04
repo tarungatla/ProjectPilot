@@ -12,7 +12,9 @@ interface FormSubmitProps {
   variant?: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link" | "primary";
 };
 
-export const FormSubmit = ({
+export const
+  
+  FormSubmit = ({
   children,
   disabled,
   className,
