@@ -1,8 +1,6 @@
 const BoardIdPage = async () => {
     return (
-        <div >
-           <h1>fdl;ldfjkfkkl;fldk</h1> 
-        </div>
+       <h1>Tarun</h1>
     );
 };
 
