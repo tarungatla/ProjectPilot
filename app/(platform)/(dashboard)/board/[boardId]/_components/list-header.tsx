@@ -8,6 +8,7 @@ import { useState, useRef, ElementRef } from "react";
 import { useAction } from "@/hooks/use-action";
 import { updateList } from "@/actions/update-list";
 import { FormInput } from "@/components/form/form-input";
+import { ListOptions } from "./list-options";
 
 
 interface ListHeaderProps {
@@ -16,7 +17,8 @@ interface ListHeaderProps {
 };
 
 export const ListHeader = ({
-  data,
+    data,
+    onAddCard,
 }: ListHeaderProps) => {
   const [title, setTitle] = useState(data.title);
   const [isEditing, setIsEditing] = useState(false);
@@ -102,7 +104,11 @@ export const ListHeader = ({
         >
           {title}
         </div>
-      )}
+          )}
+        <ListOptions
+        onAddCard={onAddCard}
+        data={data}
+      />
     </div>
   );
 };
