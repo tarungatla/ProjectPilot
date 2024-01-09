@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { ListWithCards } from "@/types";
 
 import { ListHeader } from "./list-header";
+import { CardForm } from "./card-form";
 
 interface ListItemProps {
   data: ListWithCards;
@@ -41,7 +42,15 @@ export const ListItem = ({
             <ListHeader 
               onAddCard={enableEditing}
               data={data}
-            />
+        />
+        <CardForm
+          listId={data.id}
+          ref={textareaRef}
+          isEditing={isEditing}
+          enableEditing={enableEditing}
+          disableEditing={disableEditing} 
+        />
+        
           </div>
         </li>
   );
