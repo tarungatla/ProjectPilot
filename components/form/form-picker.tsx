@@ -38,7 +38,6 @@ export const FormPicker = ({
         if (result && result.response) {
           const newImages = (result.response as Array<Record<string, any>>);
           setImages(newImages);
-          console.log(newImages)
         } else {
           console.error("Failed to get images from Unsplash");
         }

@@ -23,7 +23,6 @@ export const BoardOptions = ({ id }: {id:string}) => {
   })
   const onDelete = () => {
     execute({id});
-    console.log("Delete Clicked")
   };
 
   return (
